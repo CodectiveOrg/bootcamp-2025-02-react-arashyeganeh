@@ -1,5 +1,6 @@
 import reverseArray from "./reverse-array";
 import countNumberOfArray from "./count-number";
+import sortArray from "./sortArray";
 
 {
     // Task 1
@@ -14,5 +15,28 @@ import countNumberOfArray from "./count-number";
     console.info("Task 2")
     const ar = ["A", 2, "C", false, 5]
     console.log(ar, "=>", `Count is ${countNumberOfArray(ar)}`)
+    console.info("###################")
+}
+
+{
+    // Task 3
+    console.info("Task 3")
+    const inputArray = [
+        {
+            name: "B (2023-03)",
+            createdAt: "2023-03-03T00:00:01.851Z",
+        },
+        {
+            name: "C (2025-02)",
+            createdAt: "2020-01-01T00:00:01.851Z",
+            modifiedAt: "2025-02-02T02:02:02.851Z"
+        },
+        {
+            name: "A (2025-01)",
+            createdAt: "2025-01-01T00:00:01.851Z",
+            modifiedAt: "2025-01-02T02:02:02.851Z"
+        }
+    ];
+    console.log(sortArray(inputArray));
     console.info("###################")
 }
