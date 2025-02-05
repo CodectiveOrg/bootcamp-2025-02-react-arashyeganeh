@@ -3,7 +3,6 @@ import countNumberOfArray from "./count-number";
 import sortArray from "./sortArray";
 
 function getReverseArray(): void {
-  // Task 1
   const array = ["A", 2, true, , null];
   console.log(array, "=>", reverseArray(array));
   console.info("###################");
@@ -16,7 +15,6 @@ function getCountNumberOfArray(): void {
 }
 
 function sortingArray(): void {
-  // Task 3
   const inputArray = [
     {
       name: "B (2023-03)",
