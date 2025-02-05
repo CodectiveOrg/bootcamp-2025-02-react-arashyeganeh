@@ -1,11 +1,11 @@
 const countNumberOfArray = <T>(inputArray: T[]): number => {
-    inputArray = inputArray.filter((entity) => {
-        return typeof entity === "number";
-    })
+  let counter = 0;
 
-    return inputArray.length
-}
+  inputArray.forEach((entity) => {
+    typeof entity === "number" && counter++;
+  });
 
-const a = ["A", 2, "3"];
+  return counter;
+};
 
 export default countNumberOfArray;
